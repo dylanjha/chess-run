@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>My Page</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" /> 
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="script.js"></script>
+  <script src="jquery.countdown.min.js"></script>
+</head> 
+<body> 
+
+<div id="select" data-role="page">
+
+  <div data-role="header">
+    <h1>Chess Run</h1>
+  </div><!-- /header -->
+
+  <div data-role="content"> 
+
+    <label for="slider-1">Minutes:</label>
+    <input type="range" name="slider-1" id="slider-1" value="10" min="2" max="40" data-highlight="true" />
+    <a href="#clock" id="play" data-role="button" data-icon="check" data-transition="flip">Play!</a>   
+  
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="clock" data-role="page">
+
+  <div data-role="content"> 
+    <div id="white" class="countdown">
+    </div>
+    <a href="#select" data-role="button" data-icon="back" data-transition="flip">back to set time</a>     
+    <div id="black" class="countdown">
+    </div>
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
