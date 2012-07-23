@@ -1,4 +1,6 @@
 $(function() {
+  
+  //When play is clicked, initialize counters and pause them.
   $('#play').click(function(){
     var input = $('#slider-1').val();
     var count = input*60;
@@ -15,8 +17,12 @@ $(function() {
       layout: '{mn}'+':'+'{snn}'
     });
 
+    $('#black').countdown('pause');
+    $('#white').countdown('pause');
   });
 
+
+  //When black is clicked, 
   $('#black').click(function() { 
     // function pauseBlack() {
       $('#black').countdown('pause');
@@ -24,29 +30,12 @@ $(function() {
     // }
   });
 
-  //     function startBlack() {    
-  //       $('#black').countdown({
-  //         until: count,
-  //         format: 'MS',
-  //         layout: '{mn}'+':'+'{sn}'
-  //       });
-  //     }
-  //   }); 
-
+  //When white is clicked
   $('#white').click(function() {
     // function pauseWhite() {
       $('#white').countdown('pause');
       $('#black').countdown('resume')
     // }
   });
-
-  //     function startWhite() {
-  //       $('#white').countdown({
-  //         until: count
-  //         format: 'MS',
-  //         layout: '{mn}'+':'+'{sn}'
-  //       });
-  //     }
-  //   });
 
 });
