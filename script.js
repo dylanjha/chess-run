@@ -19,8 +19,8 @@ $(function() {
 
   $('#black').click(function() { 
     // function pauseBlack() {
-      console.log('pauseblack');
       $('#black').countdown('pause');
+      $('#white').countdown('resume');
     // }
   });
 
@@ -35,8 +35,8 @@ $(function() {
 
   $('#white').click(function() {
     // function pauseWhite() {
-      console.log('pausewhite');
       $('#white').countdown('pause');
+      $('#black').countdown('resume')
     // }
   });
 
