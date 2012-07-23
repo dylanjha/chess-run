@@ -6,13 +6,13 @@ $(function() {
     $('#white').countdown({
       until: count,
       format: 'MS',
-      layout: '{mn}'+':'+'{sn}'
+      layout: '{mn}'+':'+'{snn}'
     });
 
     $('#black').countdown({
       until: count,
       format: 'MS',
-      layout: '{mn}'+':'+'{sn}'
+      layout: '{mn}'+':'+'{snn}'
     });
 
   });
