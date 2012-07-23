@@ -24,24 +24,26 @@ $(function() {
 
   //When black is clicked, 
   $('#black').click(function() { 
-    // function pauseBlack() {
       $('#black').countdown('pause');
       $('#white').countdown('resume');
-    // }
   });
 
   //When white is clicked
   $('#white').click(function() {
-    // function pauseWhite() {
       $('#white').countdown('pause');
       $('#black').countdown('resume')
-    // }
   });
 
   //When back button is clicked, destroy timers
   $('#back').click(function(){
     $('#white').countdown('destroy');
     $('#black').countdown('destroy');
+  });
+
+  //When pause is clicked, pause both countdowns
+  $('#pause').click(function(){
+    $('#white').countdown('pause');
+    $('#black').countdown('pause');
   });
 
 });
