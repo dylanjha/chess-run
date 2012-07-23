@@ -38,4 +38,10 @@ $(function() {
     // }
   });
 
+  //When back button is clicked, destroy timers
+  $('#back').click(function(){
+    $('#white').countdown('destroy');
+    $('#black').countdown('destroy');
+  });
+
 });
