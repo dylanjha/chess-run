@@ -3,6 +3,10 @@
   background: url('chess-pieces.jpg');
 }
 
+.middle_button {
+  width: 46%;
+}
+
 .counter {
   width: 100%;
   text-align: center;

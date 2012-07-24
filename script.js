@@ -30,7 +30,7 @@ $(function() {
   //When white is clicked
   $('#white').click(function() {
       $('#white').countdown('pause');
-      $('#black').countdown('resume')
+      $('#black').countdown('resume');
   });
 
   //When back button is clicked, destroy timers
