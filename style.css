@@ -1,4 +1,9 @@
-.countdown {
+#select {
+  color: white;
+  background: url('chess-pieces.jpg');
+}
+
+.counter {
   width: 100%;
   text-align: center;
   padding: 70px 0;
@@ -8,14 +13,14 @@
 #black {
   background: black;
   color: white;
-}
-
-#white {
-  background: white;
-  color: black;
   transform:rotate(180deg);
   -ms-transform:rotate(180deg); /* IE 9 */
   -moz-transform:rotate(180deg); /* Firefox */
   -webkit-transform:rotate(180deg); /* Safari and Chrome */
   -o-transform:rotate(180deg); /* Opera */
+}
+
+#white {
+  background: white;
+  color: black;
 }

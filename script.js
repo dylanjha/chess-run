@@ -17,8 +17,7 @@ $(function() {
       layout: '{mn}'+':'+'{snn}'
     });
 
-    $('#black').countdown('pause');
-    $('#white').countdown('pause');
+    $('.counter').countdown('pause');
   });
 
 
@@ -36,14 +35,12 @@ $(function() {
 
   //When back button is clicked, destroy timers
   $('#back').click(function(){
-    $('#white').countdown('destroy');
-    $('#black').countdown('destroy');
+    $('.counter').countdown('destroy');
   });
 
   //When pause is clicked, pause both countdowns
   $('#pause').click(function(){
-    $('#white').countdown('pause');
-    $('#black').countdown('pause');
+    $('.counter').countdown('pause');
   });
 
 });
