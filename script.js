@@ -38,7 +38,6 @@ $(function() {
   //When back button is clicked, destroy timers
   $('#back').click(function(){
     $('.counter').countdown('destroy');
-    return false;
   });
 
   //When pause is clicked, pause both countdowns
